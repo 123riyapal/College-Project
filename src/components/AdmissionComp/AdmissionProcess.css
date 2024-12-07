@@ -1,0 +1,91 @@
+/* Admissionprocess.css */
+
+  .admissionprocess-page {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header */
+  .admissionprocess-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .admissionprocess-header h1 {
+    font-size: 2.5rem;
+  }
+  .admissionprocess-header .line{
+    background-color: #fda13b;
+    margin-bottom: 40px;
+  }
+  .admissionprocess-header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .admissionprocess-page section h2{
+    text-align: center;
+    margin: 70px 0;
+    font-size: 2rem;
+  }
+    .application-process ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    list-style-type: decimal;
+    color: #555;
+  }
+  
+  .application-process li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  /* Eligibility & Required Documents */
+  .eligibility ul,
+  .required-documents ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    color: #555;
+  }
+  
+  .eligibility ul li,
+  .required-documents ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  /* Important Dates */
+  .important-dates .dates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .date-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: box-shadow 0.3s;
+  }
+  
+  .date-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .date-card h3 {
+    font-size: 1.3rem;
+    color: #003366;
+  }
+  
+  .date-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Contact Information */

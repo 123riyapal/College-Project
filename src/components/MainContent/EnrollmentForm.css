@@ -1,0 +1,254 @@
+#Enrollment {
+    background: linear-gradient(#003a639d, #003a63c5), url("../images/image.png") no-repeat center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin:0px 20vw;
+    width: 100%;
+  }
+  
+.headfORM{
+    background-color: #Fda13b;
+    width: 27vw;
+    height: 5vw;
+    border-radius: 20px 40px 40px 0;
+    padding:10px 20px 20px 20px;
+    position: relative;
+    bottom: 40px;
+    color: white;
+}
+.headfORM h3{
+    font-size: 1.5rem;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+.headfORM p{
+    font-size: 12px;
+    font-family: "Poppins";
+
+}
+.Form{
+    border-radius: 20px 9px 60px 0;
+
+    background-color: white ;
+    width: 27.2vw;
+    height: 30vw;
+}
+.enroll{
+    margin-left: 45px;
+}
+.leftSide{
+    position: relative;
+    z-index: 100;
+    top: 20px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    gap: 10px;
+    padding-left: 20px;
+ 
+}
+.rightSide{
+    font-family: "Poppins";
+
+}
+input,textarea,select{
+    width: 80%;
+    border: none;
+    margin: 5px;
+    background-color: ghostwhite;
+    padding: 15px;
+}
+.rightSide .skills{
+    display: flex;
+    gap: 10px;
+    color: #Fda13b;
+    font-family: "Cormorant Garamond",sans-serif;
+    font-size: 1.3rem;
+    align-items: center;
+}
+.rightSide .mainHeading{
+    font-size: 2.7rem;
+    color: white;
+    padding: 0;
+    width: 42vw;
+    text-align: left;
+    line-height: 55px;
+}
+.rightSide .desc{
+    color: white;
+    font-family: "Poppins";
+    line-height: 18px;
+    font-size: 11px;
+    width: 35vw;
+    text-align: justify;
+    padding: 20px 0px;
+}
+.quality{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    
+}
+/* Container for the progress bar */
+.progress-container {
+    width: 100%; /* Adjust as needed */
+    height: 8px; /* Height of the progress bar */
+    background-color: white; /* Background color of the container */
+    border-radius: 4px; /* Rounded edges */
+    overflow: hidden;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle effect */
+  }
+  .button{
+    margin-top: 15px;
+    color: white;
+  }
+  
+  /* Actual progress fill */
+  .progress-bar {
+    width: 75%; /* Adjust percentage for progress level */
+    height: 100%;
+    background-color: #FDA13B; /* Orange color */
+    transition: width 0.4s ease; /* Smooth transition */
+  }
+  @media (max-width:1080px) {
+    #Enrollment{
+        height: 100vh;
+    }
+    .container{
+        height: 100%;
+    }
+    .Form{
+        width: 35vw;
+        height: 80vh;
+    }
+    .headfORM{
+        width: 35vw;
+        height: 10vh;
+    }
+    .headfORM h3{
+        font-size: 20px;
+    }
+    input,textarea,select{
+        width: 100%;
+    }
+    .skills{
+        font-size: 2rem;
+    }
+    .rightSide .mainHeading{
+     font-size: 2rem; 
+     line-height: 40px;
+     width: 40vw;  
+    }
+    .progress-container{
+        width: 100%;
+    }
+  }
+  @media (max-width:780px) {
+    .Form{
+        width: 40vw;
+    }
+    .headfORM{
+        width: 40vw;
+    }
+    .rightSide .mainHeading{
+        width: 50vw;
+    }
+    .rightSide .desc{
+        width: 50vw;
+    }
+  }
+  @media (max-width:680px) {
+    #Enrollment{
+        height: 100%;
+
+    }
+    .headfORM{
+        width: 100%;
+        height: 12vh;
+    }
+    
+    .container{
+        flex-direction: column;
+        margin: 100px 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightSide, .leftSide{
+        width: 100%;
+    }
+    .Form{
+        width: 90%;
+    }
+
+    .skills{
+        font-size: 10px;
+    }
+    input,textarea,select{
+        width: 60vw;
+    }
+
+    .rightSide .mainHeading,.rightSide .desc{
+        width: 90%;
+        text-align: justify;
+    }
+    .quality{
+        justify-content: space-between;
+    }
+  }
+  @media (max-width:480px) {
+    .headfORM{
+        width: 100%;
+        height: 12vh;
+    }
+    .headfORM p{
+        font-size: 10px;
+    }
+    .container{
+        margin: 100px 40px;
+    }
+    .rightSide{
+        padding-top: 20px;
+    }
+    .rightSide .mainHeading{
+        text-align: left;
+        font-size: 2.9rem;
+        width: 91vw;
+        line-height: 50px;
+    }
+  }
+  @media (max-width:350px) {
+    .container{
+        margin: 120px 10px;
+    }
+    .Form{
+        width: 100%;
+    }
+    .headfORM{
+        height: 30vw;
+    }
+    .rightSide .mainHeading{
+        width: 90%;
+        font-size: 2rem;
+        justify-content: center;
+    }
+
+    
+  }

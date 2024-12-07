@@ -1,0 +1,116 @@
+.blog-section {
+    background-image: url(https://cdn.prod.website-files.com/6398605b5541055872b8d486/63a9bdf3a014a57abb14b5be_cyril.webp);
+    background-position: center;
+    margin-bottom: 120px;
+    overflow-x: hidden;
+}
+#Course .mainHeading,.desc{
+    text-align: center;
+}
+.mainHeading{
+    font-size: 3rem;
+    font-family: 'Poppins',sans-serif;
+    padding: 10px 0px;
+}
+#Course{
+    padding-top: 10px;
+}
+
+.desc {
+    color: gray;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+.highLight{color:#D2691E;}
+.blog-courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Individual blog course styling */
+.course {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    max-height: 1200px;
+    position: relative;
+    flex-direction: column;
+}
+
+/* Course image styling */
+.course img {
+    width: 100%;
+    height: auto;
+}
+
+/* Content of each course */
+.course-content {
+    padding: 15px;
+    font-family: "Jost", sans-serif;
+}
+
+.course-content .date {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.course-content h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+.course-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #555;
+    font-weight: 400;
+}
+
+/* Read more link styling */
+.course-content .enroll-button {
+    color: white; /* Coffee-like color */
+    font-weight: bold;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    bottom: 0;
+    left: 0;
+    background-color: #fda13b;
+    padding: 10px;
+    border-radius: 50px;
+    width: max-content;
+    border-radius: 30px 30px 30px 0;
+
+}
+.enroll-button:hover{
+    background-color: #D2691E;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blog-courses {
+        grid-template-columns: 1fr; /* Single column on small screens */
+        grid-template-rows: auto;
+        gap: 40px;
+    }
+
+    .course {
+        max-width: 100%;
+    }
+}
+@media (max-width:480px) {
+    .mainHeading{
+        font-size: 2rem;
+    }
+}

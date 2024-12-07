@@ -1,0 +1,79 @@
+/* Overlay for the search page, covering the whole screen */
+.search-page {
+    background: rgba(0, 0, 0, 0.7);  /* Dark overlay for the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    height: 100vh;  /* Full screen height */
+    overflow: hidden; /* Prevent background from scrolling */
+    animation: fadeIn 0.3s ease-in-out;
+    width: 100vw;
+    position: fixed;
+    right: -100px;
+    top: -30.9px;
+
+  }
+  
+  /* Search container styling */
+  
+  /* Close icon (X) at the top-right of the search container */
+  .close-icon {
+    position: absolute;
+    top: 15vh;
+    right: 45vw;
+    cursor: pointer;
+    font-size: 35px;
+    color: #003a63;
+    transition: color 0.3s ease;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+  
+  .close-icon:hover {
+    color: #ff6347;  /* Change color to red when hovered */
+  }
+  
+  /* Search input field styling */
+  .search-input {
+    width: 50vw;
+    padding: 15px 20px;
+    margin-top: 30px;  /* Spacing between input field and other elements */
+    border-radius: 10px;  /* Rounded edges */
+    border: 1px solid #ccc;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  /* Focus effect for the search input */
+  .search-input:focus {
+    border-color: #003a63;  /* Dark blue color on focus */
+    box-shadow: 0 0 10px rgba(0, 58, 99, 0.4);  /* Subtle glow effect */
+  }
+  
+  /* Placeholder text styling */
+  .search-input::placeholder {
+    color: #bbb;
+    font-style: italic;
+    font-weight: 300;
+  }
+  
+  /* Hover effect on the search input field */
+  .search-input:hover {
+    border-color: #003a63;  /* Border color change on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  
+  /* Fade-in animation for the overlay */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,110 @@
+/* .Nav li {
+    list-style: none;
+}
+
+.Nav li a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    transition: transform 0.1s ease, border-bottom 0.1s ease;
+} */
+.nav-item{
+    /* background-color: #fff; */
+}
+.nav-link{
+    font-size: 1.2em;
+    /* background-color: #5e0f0f; */
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    transition: transform 0.1s ease, border-bottom 0.1s ease;
+
+    color: #FFF;
+}
+
+.Nav li a:hover {
+    border-bottom: 2px solid whitesmoke !important;
+}
+
+.Nav li a:active{
+    transform: translateY(20px) !important;
+
+}
+.Nav li {
+    display: inline;
+    padding: 20px;
+}
+
+.Nav {
+    display: flex;
+    gap: 20px;
+}
+.menu-toggle{
+    display: none;
+}
+.close{
+    display: none;
+}
+
+    @media (max-width: 1080px) {
+        .Nav.active {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 50vh;
+            width: 100vw;
+            background-color: #003a63;
+            display: flex;
+            flex-direction: column;
+            align-items: center;           
+             justify-content: center;
+            gap: 30px;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+            
+        }
+            
+        
+        .Nav li a{
+            display: none;
+        }
+        .active {
+            background-color:#003a63;
+            height: 100vh;
+            width:100vw;
+            background-size: 100%;
+        }
+        .active li a{
+            display: block;
+                width: 100vw;
+            text-align: center;
+
+        }
+      
+        /* Display menu when active */
+      .active li a:hover{
+        border-bottom: 0.001px solid white;
+        box-shadow: 1px 1px 20px white;
+      }
+        
+        .menu-toggle {
+        color: white;
+          display: block;
+          position: absolute;
+          right: 25px;
+          top: 25px;
+        }
+      }
+      @media (max-width: 480px) {
+        .Nav.active{
+            width: 100%;
+        }
+        .menu-toggle {
+            color: white;
+              display: block;
+              position: absolute;
+              right: 25px;
+              top: 25px;
+            }
+      }

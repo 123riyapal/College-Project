@@ -1,0 +1,27 @@
+  
+  .Text{
+    margin: 80px;
+    text-align: center;
+    font-family: "Poppins";
+
+  }
+  .Text h2 {
+    color: #333;
+    font-size: 2.5rem;
+  }
+  .Text p{
+    width: 30vw;
+    font-size: 13px;
+    justify-self: center;
+    padding-top: 20px;
+    color: #333333c1;
+  }
+
+  @media (max-width:1080px) {
+    .Text{
+      margin: 10vw;
+    }
+    .Text p{
+      width: 80%;
+    }
+  }

@@ -1,0 +1,149 @@
+/* Footer.css */
+#Footer {
+    background-color: #003a63;
+    color: #fff;
+    padding: 60px 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 80px 0 0 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 220px;
+    margin: 20px 0;
+  }
+  
+  .footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #f9b233;
+    text-transform: uppercase;
+  }
+  
+  .footer-column p,
+  .footer-column ul,
+  .footer-column a {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #ddd;
+    padding-top: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-column ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #f9b233;
+    text-decoration: underline;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 0;
+  }
+  
+  .newsletter-form input {
+    padding: 12px;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    color: #333;
+    width: 50%;
+
+  }
+  
+  .newsletter-form button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #f9b233;
+    color: #1d2a57;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #f7a91b;
+    color: #fff;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+  }
+  .newsletter-form form{
+    padding-left: 0;
+  }
+  .social-icons .MuiSvgIcon-root {
+    font-size: 36px;
+    padding: 10px;
+    cursor: pointer;
+    color: #f9b233;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .social-icons .MuiSvgIcon-root:hover {
+    color: #fff;
+    background-color: #f9b233;
+  }
+  @media (max-width:1080px) {
+    .footer-column{
+        margin-left: 30px;
+    }
+    .newsletter-form input , .newsletter-form button{
+        width: 70%;
+    }
+    .newsletter-form {
+        padding-left: 0;
+    }
+
+  }
+  @media (max-width:780px) {
+    .newsletter-form input , .newsletter-form button{
+        width: 40vw;
+    }
+    .footer-column .newsletter-form {
+        padding-left: 0;
+    }
+    .footer-column{
+        margin-left: 30px;
+    }
+  }
+  @media (max-width:400px) {
+    .newsletter-form input , .newsletter-form button{
+        width: 80vw;
+    }
+  }

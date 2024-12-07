@@ -1,0 +1,56 @@
+.admission-criteria {
+    padding: 40px;
+    background-color: #f5f7fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .admission-criteria h2 {
+    font-size: 2em;
+    color: #003a64;
+    margin-bottom: 10px;
+  }
+  
+  .intro {
+    color: #606060;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+ .admission-criteria ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .admission-criteria li {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s;
+  }
+  
+ .admission-criteria li:hover {
+    background-color: #e0f7fa;
+  }
+  
+  .icon {
+    font-size: 2em;
+    color: #Fda13b;
+    margin-right: 15px;
+  }
+  
+  .admission-criteria li span {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.5;
+  }
+  
